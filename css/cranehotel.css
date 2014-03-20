@@ -1,0 +1,49 @@
+body {
+    background-color: #F5F5F5;
+    height: auto;
+    width: auto;
+}
+
+div#menu {
+    background-color: #F5F5F5;
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: relative;
+    border: dashed;
+    float: left;
+}
+
+div#menu a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+    margin-left: 9%;
+    margin-top: 5%;
+    display: block;
+    float: left;
+}
+
+div#menu img {
+    display: inline-block;
+    margin-left: 10%;
+    float: left;
+}
+
+div#container {
+    background-color: #F5F5F5;
+    height: 1000px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    border: dotted;
+    float: left;
+}
+
+div#container img {
+    width: 80%;
+    margin-left: 9%;
+}
