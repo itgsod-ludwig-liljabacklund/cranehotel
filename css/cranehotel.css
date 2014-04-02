@@ -4,6 +4,7 @@ body {
     width: auto;
 }
 
+
 div#menu {
     background-color: #F5F5F5;
     height: 10%;
@@ -13,6 +14,13 @@ div#menu {
     position: relative;
     #border: dashed;
     float: left;
+}
+
+.divider {
+    float: left;
+    padding-top: 20px;
+    margin-left: 100px;
+    #border: dashed;
 }
 
 div#menu, a#rest, a#rightmost, a#leftmost {
@@ -52,41 +60,108 @@ div#menu a#leftmost {
 
 .logo {
     height: 20%;
-    display: inline-block;
     margin-left: 8%;
     float: left;
 }
 
-div#container {
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -45px;
+}
+
+.container {
     background-color: #F5F5F5;
-    height: 100%;
-    width: 83%;
-    margin-left: 8%;
-    margin-top: 2.5%;
+    height: 1200px;
+    width: 930px;
+    margin-left: 10%;
+    margin-top: 1.5%;
     margin-bottom: 5%;
     #border: dotted;
     float: left;
 }
 
-.view {
+.index_view {
     width: 100%;
     border: solid;
 }
 
-.food {
-    width: 60%;
-    border: solid;
+.row_1 {
+    position: relative;
     float: left;
+    width: 100%;
+    #border: dotted;
 }
 
-.food_text {
-    width: 39.4%;
+.row_1_cf {
+    position: relative;
+    float: right;
+    width: 38%;
+    #border: dashed;
+    background: url("../images/edited/food_text_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.row_1_cf img {
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;    
+}
+
+.row_1_cf img:hover {
+    opacity: 0;
+}
+
+.row_2 {
+    position: relative;
     float: left;
-    background: url('../images/edited/food_text.png');
+    width: 100%;
+    padding-top: 15px; 
+    #border: dotted;
+}
+
+.row_2_cf {
+    position: relative;
+    width: 38%;
+    float: left;
+    #border: dashed;
+    background: url("../images/edited/food_text_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.row_2_cf img {
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;    
+}
+
+.row_2_cf img:hover {
+    opacity: 0;
+}
+
+.about_view {
+    width: 60%;
+    border: solid;
+    float: right;
     background-size: contain;
 }
 
-.food_text:hover {
-    background: url('../images/edited/food_1.jpg');
+.about_food {
+    width: 60%;
+    border: solid;
     background-size: contain;
 }
