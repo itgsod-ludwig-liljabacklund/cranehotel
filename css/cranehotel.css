@@ -90,7 +90,7 @@ p {
     font-size: 20px; 
 }
 
-.container {
+.container, .container_rooms, .container_about {
     background-color: #F5F5F5;
     height: 900px;
     width: 1000px;
@@ -101,95 +101,96 @@ p {
     float: left;
 }
 
+.container_rooms {
+    height: 1700px;
+}
+
+.container_about {
+    height: 750px;
+}
+
 .index_view {
     width: 100%;
     border: solid;
 }
 
-.row_1 {
+#about_food, #about_location {
     position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 30px;
-    #border: dotted;
-}
-
-.row_1_cf {
-    position: relative;
-    float: right;
-    width: 38%;
-    #border: dashed;
-    background: url("../images/edited/food_text_2.png");
+    height: 237px;
+    width: 550px;
+    background-image: url("../images/edited/food_1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    border: solid;
 }
 
-.row_1_cf img {
-    width: 100%;
+#about_location {
+    background-image: url("../images/edited/location_1.jpg");
+    float: right;
+    width: 631px;
+    margin-top: 10px;
+}
+
+#about_cf, #about_cf_2, .rooms_cf, .rooms_cf_2, .rooms_cf_3 {
+    float: left;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#about_cf img, #about_cf_2 img, .rooms_cf img, .rooms_cf_2 img, .rooms_cf_3 img{
+    position: absolute;
+    top: -240px;
+    left: 570px;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
 }
 
-.row_1_cf img:hover {
-    opacity: 0;
+#about_cf img.top:hover, #about_cf_2 img.top:hover, .rooms_cf img.top:hover, .rooms_cf_2 img.top:hover, .rooms_cf_3 img.top:hover {
+    opacity:0;
 }
 
-.row_2 {
-    position: relative;
-    float: left;
-    width: 100%;
-    padding-top: 15px; 
-    #border: dotted;
+#about_cf_2 img {
+    top: 15px;
+    left: -95px;
 }
 
-.row_2_cf {
-    position: relative;
-    width: 38%;
-    float: left;
-    #border: dashed;
-    background: url("../images/edited/food_text_1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.rooms_cf img {
+    top: 10px;
+    left: 40px;
 }
 
-.row_2_cf img {
-    width: 100%;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;    
+.rooms_cf_2 img {
+    top: 490px;
+    left: -60px;
 }
 
-.row_2_cf img:hover {
-    opacity: 0;
-}
-
-.about_view {
-    width: 60%;
-    border: solid;
-    float: right;
-    background-size: contain;
-}
-
-.about_food {
-    width: 60%;
-    border: solid;
-    background-size: contain;
+.rooms_cf_3 img {
+    top: 970px;
+    left: -160px;
 }
 
 #footer {
     clear: both;
-    border: 1px groove #aaaaaa;
-    background: #7F7F7F;
-    color: White;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    line-height: normal;
-    margin: 0;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    background-color: #CCCCCC;
+}
+
+p.left {
+    font-size: 23px;
+    text-align: left;
+    text-height: auto;
+    margin-left: 550px;
+    padding-top: 7px;
+}
+
+.index_crane {
+    height: 50%;
+    margin-left: 290px;
 }
