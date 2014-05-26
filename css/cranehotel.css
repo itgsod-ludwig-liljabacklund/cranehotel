@@ -6,8 +6,8 @@ body {
 
 div#menu {
     background-color: #F5F5F5;
-    height: 10%;
-    width: 83%;
+    height: 150px;
+    width: 1000px;
     margin-left: 9%;
     margin-top: 5%;
     position: relative;
@@ -68,7 +68,6 @@ div#menu a#leftmost {
 }
 
 .logo {
-    height: 20%;
     margin-left: 8%;
     float: left;
 }
@@ -92,9 +91,9 @@ p {
     font-size: 20px; 
 }
 
-.container, .container_rooms, .container_about, .container_contact {
+.container, .container_rooms, .container_about, .container_contact, .container_booking {
     background-color: #F5F5F5;
-    height: 900px;
+    height: 800px;
     width: 1000px;
     margin-left: 10%;
     margin-top: 1.5%;
@@ -107,11 +106,15 @@ p {
 }
 
 .container_about {
-    height: 750px;
+    height: 780px;
 }
 
 .container_contact {
-    height: 820px;
+    height: 570px;
+}
+
+.container_booking {
+    height: 570px;
 }
 
 .index_view {
@@ -136,7 +139,7 @@ p {
     margin-top: 10px;
 }
 
-#about_cf, #about_cf_2, .rooms_cf, .rooms_cf_2, .rooms_cf_3, .contact_cf, .contact_cf_2 {
+#about_cf, #about_cf_2, .rooms_cf, .rooms_cf_2, .rooms_cf_3, .contact_cf, .booking_cf {
     float: left;
     position: relative;
     height: 100px;
@@ -144,7 +147,7 @@ p {
     margin: 0 auto;
 }
 
-#about_cf img, #about_cf_2 img, .rooms_cf img, .rooms_cf_2 img, .rooms_cf_3 img, .contact_cf img, .contact_cf_2 img{
+#about_cf img, #about_cf_2 img, .rooms_cf img, .rooms_cf_2 img, .rooms_cf_3 img, .contact_cf img, .booking_cf img{
     position: absolute;
     top: -240px;
     left: 570px;
@@ -154,7 +157,7 @@ p {
     transition: opacity 1s ease-in-out;
 }
 
-#about_cf img.top:hover, #about_cf_2 img.top:hover, .rooms_cf img.top:hover, .rooms_cf_2 img.top:hover, .rooms_cf_3 img.top:hover, .contact_cf img.top:hover, .contact_cf_2 img.top:hover {
+#about_cf img.top:hover, #about_cf_2 img.top:hover, .rooms_cf img.top:hover, .rooms_cf_2 img.top:hover, .rooms_cf_3 img.top:hover, .contact_cf img.top:hover, .booking_cf img.top:hover {
     opacity:0;
 }
 
@@ -183,9 +186,9 @@ p {
     left: -600px;
 }
 
-.contact_cf_2 {
-    top: 520px;
-    left: -700px;
+.booking_cf {
+    top: 260px;
+    left: -580px;
 }
 
 .redirect {
@@ -200,12 +203,11 @@ a.redirect {
 }
 
 #footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
-    background-color: #CCCCCC;
+    background-color: #cccccc;
+    height: 30px;
+    width: 1300px;
+    bottom: 0;
+    position: fixed;
 }
 
 p.left {
@@ -225,3 +227,26 @@ p.left {
     margin-top: 10px;
     border: solid;
 }
+
+/*.sprite-crane_1{ background-position: 0 0; width: 711px; height: 695px; } 
+.sprite-divider{ background-position: 0 -745px; width: 960px; height: 5px; } 
+.sprite-divider_small{ background-position: 0 -800px; width: 220px; height: 5px; } 
+.sprite-email{ background-position: 0 -855px; width: 1000px; height: 256px; } 
+.sprite-email_2{ background-position: 0 -1161px; width: 1000px; height: 256px; } 
+.sprite-food_1{ background-position: 0 -1467px; width: 851px; height: 366px; } 
+.sprite-food_text_1{ background-position: 0 -1883px; width: 356px; height: 237px; } 
+.sprite-food_text_2{ background-position: -1050px 0; width: 356px; height: 237px; } 
+.sprite-location_1{ background-position: -1050px -287px; width: 631px; height: 237px; } 
+.sprite-location_text_1{ background-position: -1050px -574px; width: 355px; height: 237px; } 
+.sprite-location_text_2{ background-position: -1050px -861px; width: 356px; height: 237px; } 
+.sprite-logo_crane3_edited{ background-position: -1050px -1148px; width: 152px; height: 152px; } 
+.sprite-phone{ background-position: -1050px -1350px; width: 1000px; height: 256px; } 
+.sprite-phone_2{ background-position: -1050px -1656px; width: 1000px; height: 256px; } 
+.sprite-room1_text{ background-position: -2100px 0; width: 920px; height: 469px; } 
+.sprite-room2_text{ background-position: -2100px -519px; width: 920px; height: 465px; } 
+.sprite-room3_text{ background-position: -2100px -1034px; width: 920px; height: 465px; } 
+.sprite-room_1{ background-position: -2100px -1549px; width: 920px; height: 465px; } 
+.sprite-room_2{ background-position: -3150px 0; width: 920px; height: 465px; } 
+.sprite-room_3{ background-position: -3150px -515px; width: 920px; height: 465px; } 
+.sprite-transparent{ background-position: -3150px -1030px; width: 1px; height: 1px; } */
+
