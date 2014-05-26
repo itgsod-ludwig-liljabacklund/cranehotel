@@ -11,15 +11,17 @@ div#menu {
     margin-left: 9%;
     margin-top: 5%;
     position: relative;
-    #border: dashed;
     float: left;
 }
 
-.divider {
+.divider, .divider_contact {
     float: left;
     padding-top: 20px;
     margin-left: 145px;
-    #border: dashed;
+}
+
+.divider_contact {
+    margin-left: 20px;    
 }
 
 .divider_small {
@@ -90,23 +92,26 @@ p {
     font-size: 20px; 
 }
 
-.container, .container_rooms, .container_about {
+.container, .container_rooms, .container_about, .container_contact {
     background-color: #F5F5F5;
     height: 900px;
     width: 1000px;
     margin-left: 10%;
     margin-top: 1.5%;
     margin-bottom: 5%;
-    #border: dotted;
     float: left;
 }
 
 .container_rooms {
-    height: 1700px;
+    height: 1720px;
 }
 
 .container_about {
     height: 750px;
+}
+
+.container_contact {
+    height: 820px;
 }
 
 .index_view {
@@ -131,7 +136,7 @@ p {
     margin-top: 10px;
 }
 
-#about_cf, #about_cf_2, .rooms_cf, .rooms_cf_2, .rooms_cf_3 {
+#about_cf, #about_cf_2, .rooms_cf, .rooms_cf_2, .rooms_cf_3, .contact_cf, .contact_cf_2 {
     float: left;
     position: relative;
     height: 100px;
@@ -139,7 +144,7 @@ p {
     margin: 0 auto;
 }
 
-#about_cf img, #about_cf_2 img, .rooms_cf img, .rooms_cf_2 img, .rooms_cf_3 img{
+#about_cf img, #about_cf_2 img, .rooms_cf img, .rooms_cf_2 img, .rooms_cf_3 img, .contact_cf img, .contact_cf_2 img{
     position: absolute;
     top: -240px;
     left: 570px;
@@ -149,7 +154,7 @@ p {
     transition: opacity 1s ease-in-out;
 }
 
-#about_cf img.top:hover, #about_cf_2 img.top:hover, .rooms_cf img.top:hover, .rooms_cf_2 img.top:hover, .rooms_cf_3 img.top:hover {
+#about_cf img.top:hover, #about_cf_2 img.top:hover, .rooms_cf img.top:hover, .rooms_cf_2 img.top:hover, .rooms_cf_3 img.top:hover, .contact_cf img.top:hover, .contact_cf_2 img.top:hover {
     opacity:0;
 }
 
@@ -173,6 +178,27 @@ p {
     left: -160px;
 }
 
+.contact_cf {
+    top: 250px;
+    left: -600px;
+}
+
+.contact_cf_2 {
+    top: 520px;
+    left: -700px;
+}
+
+.redirect {
+    display: block;
+    text-align: center;
+}
+
+a.redirect {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: x-large;
+    color: #000000;
+}
+
 #footer {
     clear: both;
     position: relative;
@@ -193,4 +219,9 @@ p.left {
 .index_crane {
     height: 50%;
     margin-left: 290px;
+}
+
+.phone, .email {
+    margin-top: 10px;
+    border: solid;
 }
