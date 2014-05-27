@@ -14,6 +14,7 @@ div#menu {
     float: left;
 }
 
+
 .divider, .divider_contact {
     float: left;
     padding-top: 20px;
@@ -182,8 +183,8 @@ p {
 }
 
 .contact_cf {
-    top: 250px;
-    left: -600px;
+    top: 260px;
+    left: -580px;
 }
 
 .booking_cf {
@@ -208,6 +209,7 @@ a.redirect {
     width: 1300px;
     bottom: 0;
     position: fixed;
+    
 }
 
 p.left {
