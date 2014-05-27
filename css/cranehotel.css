@@ -203,23 +203,6 @@ a.redirect {
     color: #000000;
 }
 
-#footer {
-    background-color: #cccccc;
-    height: 30px;
-    width: 1300px;
-    bottom: 0;
-    position: fixed;
-    
-}
-
-p.left {
-    font-size: 23px;
-    text-align: left;
-    text-height: auto;
-    margin-left: 550px;
-    padding-top: 7px;
-}
-
 .index_crane {
     height: 50%;
     margin-left: 290px;
